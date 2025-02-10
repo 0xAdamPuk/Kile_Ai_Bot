@@ -1,6 +1,7 @@
 # Kile_Ai_Bot
 自动对话功能，多钱包、多代理，随机延时请求
-登录：https://testnet.gokite.ai?r=zxjXFFzQ
+登录：https://testnet.gokite.ai?r=a8eReTTj
+
 ## 🌟 功能
 ### 原脚本bug：  
 Bug1：串行执行阻塞  
@@ -37,8 +38,10 @@ cd Kile_Ai_Bot
 npm install
 ```
 2. 文件说明：
-   1. 其中：generated_questions文件夹是对话生成的python代码
+```bash
+其中：generated_questions文件夹是对话生成的python代码
 使用python generated_questions.py可自动生成对话语句，以便question.txt使用生成语句可自行替换到question中
+```
 
 3. 替换钱包和代理（不用代理也行）
 
@@ -50,6 +53,7 @@ npm install
 代理地址文件：proxies.txt：格式http://username:password:ip:port  
 ```
 4. 运行  
+
 ```bash
 npm run start
 ```
