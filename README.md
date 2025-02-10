@@ -2,6 +2,14 @@
 自动对话功能，多钱包、多代理，随机延时请求
 登录：https://testnet.gokite.ai?r=a8eReTTj
 
+##一键运行指令
+
+```bash
+wget -O kileai.sh https://raw.githubusercontent.com/GzGod/Kile_Ai_Bot/refs/heads/main/kileai.sh
+sed -i 's/\r$//' kileai.sh
+chmod +x kileai.sh
+./kileai.sh
+```
 ## 🌟 功能
 ### 原脚本bug：  
 Bug1：串行执行阻塞  
