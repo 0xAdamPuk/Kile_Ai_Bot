@@ -29,7 +29,7 @@ npm（Node 包管理器）
 1. 拉取文件配置
 
 ```bash
-git clone https://github.com/121panda121/Kile_Ai_Bot.git
+git clone https://github.com/Gzgod/Kile_Ai_Bot.git
 cd Kile_Ai_Bot
 ```
 
@@ -38,7 +38,8 @@ npm install
 ```
 2. 文件说明：
    1. 其中：generated_questions文件夹是对话生成的python代码
-      1. 使用python generated_questions.py可自动生成对话语句，以便question.txt使用生成语句可自行替换到question中
+使用python generated_questions.py可自动生成对话语句，以便question.txt使用生成语句可自行替换到question中
+
 3. 替换钱包和代理（不用代理也行）
 
 ``` 
