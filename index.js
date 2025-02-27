@@ -49,9 +49,9 @@ process.on('SIGINT', () => {
 });
 
 const agents = {
-  "deployment_p5J9lz1Zxe7CYEoo0TZpRVay": "教授 🧠",
-  "deployment_7sZJSiCqCNDy9bBHTEh7dwd9": "加密伙伴 💰",
-  "deployment_SoFftlsf9z4fyA3QCHYkaANq": "福尔摩斯 🔎"
+  "deployment_R89FtdnXa7jWWHyr97WQ9LKG": "教授 🧠",
+  "deployment_fseGykIvCLs3m9Nrpe9Zguy9": "加密伙伴 💰",
+  "deployment_xkerJnNBdTaZr9E15X3Y7FI8": "福尔摩斯 🔎"
 };
 
 const proxyConfig = {
