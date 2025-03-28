@@ -295,6 +295,13 @@ async function processWallet(wallet, walletIndex, useProxy) {
   console.log(chalk.green(`\n🎉 钱包 ${wallet} 已完成 ${successCount} 次成功上报，切换下一个钱包`));
 }
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 async function main() {
   displayAppTitle();
 
@@ -342,12 +349,13 @@ async function main() {
       wallets = [wallet.toLowerCase()];
     }
 
-    // 按顺序处理所有钱包
-    let walletIndex = 0;
-    for (const wallet of wallets) {
+    // 随机顺序处理所有钱包
+    let walletIndexes = [...Array(wallets.length).keys()];
+    shuffleArray(walletIndexes);
+
+    for (const walletIndex of walletIndexes) {
       if (!isRunning) break;
-      await processWallet(wallet, walletIndex, proxyConfig.enabled);
-      walletIndex++;
+      await processWallet(wallets[walletIndex], walletIndex, proxyConfig.enabled);
     }
 
     console.log(chalk.green('\n✅ 所有钱包处理完成！'));
