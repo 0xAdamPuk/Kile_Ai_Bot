@@ -292,7 +292,7 @@ async function processWallet(wallet, walletIndex, useProxy) {
     console.log(chalk.dim('────────────────────────────────────────'));
   }
 
-  console.log(chalk.green(`[${new Date().toLocaleString()}] 🎉 钱包 ${wallet} 已完成 ${successCount} 次成功上报，切换下一个钱包`));
+  console.log(chalk.green(`\n [${new Date().toLocaleString()}] 🎉 钱包 ${wallet} 已完成 ${successCount} 次成功上报，切换下一个钱包`));
 }
 
 function shuffleArray(array) {
