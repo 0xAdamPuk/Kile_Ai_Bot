@@ -293,6 +293,10 @@ async function processWallet(wallet, walletIndex, useProxy) {
   }
 
   console.log(chalk.green(`\n [${new Date().toLocaleString()}] 🎉 钱包 ${wallet} 已完成 ${successCount} 次成功上报，切换下一个钱包`));
+
+  // 将日志写入文件
+  const logMessage = `[${new Date().toLocaleString()}] 钱包 ${wallet} 已完成 ${successCount} 次成功上报，切换下一个钱包\n`;
+  fs.appendFileSync('log.txt', logMessage, 'utf8');
 }
 
 function shuffleArray(array) {
